@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin panel</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+</head>
+<body>
+<div id="adminapp">
+    <div class="get" v-for="person in Persons">
+        <p>{{person.id}}</p>
+        <p>{{person.name}}</p>
+    </div>
+</div>
+<input value="Добавить карту" type="button" onclick="location.href='http://localhost:8080/add.html'" />
+
+<script src="scriptadmin.js"></script>
+</body>
+</html>

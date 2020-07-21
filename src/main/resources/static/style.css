@@ -1,0 +1,30 @@
+.welcome{
+    width: 100%;
+    margin-top: 10%;
+}
+.welcome h1{
+    text-align: center;
+}
+.welcome h2{
+    text-align: center;
+}
+.info{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.information{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.information_discount{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}

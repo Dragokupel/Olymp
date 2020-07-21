@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Olymp club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+
+</head>
+<body>
+<div class="welcome">
+<h1 id="welcome_text">Добро пожаловать в спортивный клуб Олимп</h1>
+<h2>Укажите номер карты</h2>
+</div>
+<div id="app" >
+    <div class="info">
+        <input type="number" v-model="card_id">
+        <input type="button" v-on:click="getPersonInfo" value="Вход">
+    </div>
+    <div class="information">
+        <div class="person" id="person-inf">
+
+        </div>
+    </div>
+    <div class="information_discount">
+        <div class="person-disc" id="discount">
+
+        </div>
+    </div>
+
+    <div class="buttons">
+        <input id="time_on" type="button" v-on:click="putPersonInfoon" value="Отметить время прихода" style="visibility: hidden">
+        <input id="time_off" type="button" v-on:click="putPersonInfooff" value="Отметить время ухода" style="visibility: hidden">
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

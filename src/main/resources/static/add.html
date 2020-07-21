@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить карту</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+</head>
+<body>
+<p>Добавить карту</p>
+<div id="adminapp">
+    <form action="#">
+        <p>Укажите номер карты</p>
+        <input type="number" v-model="card_id">
+        <p>Введите ФИО</p>
+        <input type="text" v-model="name">
+        <input type="submit" v-on:click="AddNewPerson" value="Добавить">
+    </form>
+</div>
+
+<input value="Назад" type="button" onclick="location.href='http://localhost:8080/admin.html'" />
+</body>
+</html>
